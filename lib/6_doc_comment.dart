@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fundamental_chapter_41_50/6%20_user_profile.dart';
-import 'package:flutter_fundamental_chapter_41_50/6_doc_comment.dart';
+import 'package:flutter_fundamental_chapter_41_50/6_user_profile.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,26 +11,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.red[900],
-          title: Text("Doc Comment"),
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Text(
-                    'No NIM',
-                  ),
-                ],
-              ),
-            ],
+          appBar: AppBar(
+            backgroundColor: Colors.red[900],
+            title: Text("Doc Comment"),
           ),
-        ),
-      ),
+          body: Center(
+            child: userProfile,
+          )),
     );
   }
 }

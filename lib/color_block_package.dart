@@ -14,7 +14,3 @@ class ColorBloc extends Bloc<ColorEvent, Color> {
     yield _color;
   }
 }
-
-// class ColorBloc extends Bloc<ColorBloc, Color> {
-
-// }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 const Color firstColor = Color(0xffF44336);
 const Color secondColor = Color(0xff4CAF50);
@@ -147,13 +146,12 @@ class ProdutCart extends StatelessWidget {
                             child: Icon(
                               Icons.add,
                               size: 18,
-                              color: Colors.white,
+                              color: Color.fromARGB(255, 94, 67, 67),
                             ),
                           ),
                         ),
                       ],
                     ),
-                    margin: EdgeInsets.all(5),
                   ),
                   SizedBox(
                     width: 140,
@@ -172,9 +170,6 @@ class ProdutCart extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 5,
                   ),
                 ],
               ),

@@ -19,7 +19,11 @@ class UserProfile extends StatelessWidget {
   /// photoUrl: https://lalala.png,
   /// ;
   /// ~~~
-  UserProfile({this.name = 'No Name', this.role = 'No Role', this.photoUrl});
+  UserProfile({
+    this.name = 'No Name',
+    this.role = 'No Role',
+    this.photoUrl,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +41,22 @@ class UserProfile extends StatelessWidget {
           width: 200,
           height: 200,
         ),
-        SizedBox()
+        SizedBox(
+          height: 10,
+        ),
+        Text(
+          name,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+        ),
+        Text(
+          "[ " + role + " ]",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        )
       ],
     );
   }
